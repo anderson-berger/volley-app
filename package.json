@@ -1,0 +1,16 @@
+{
+  "name": "volley-app",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento de campeonatos de vôlei",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "echo 'Dev script em breve'",
+    "build": "echo 'Build script em breve'",
+    "test": "echo 'Test script em breve'"  },
+  "keywords": ["volleyball", "championship", "monorepo"],
+  "author": "Anderson Berger Franzagua",
+  "license": "MIT"
+}
