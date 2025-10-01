@@ -1,9 +1,9 @@
 {
-  "name": "Volley Championship Dev",
+  "name": "Volley App Dev",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
-  
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -24,7 +24,7 @@
       }
     }
   },
-  
+
   "forwardPorts": [3000, 8000, 9000],
   "portsAttributes": {
     "3000": {
@@ -40,9 +40,9 @@
       "onAutoForward": "notify"
     }
   },
-  
-  "postCreateCommand": "sudo chown -R node:node /workspace && npm install && npm run build -w @volley/shared",
+
+  "postCreateCommand": "npm install && npm run build -w @volley/shared",
   "postStartCommand": "bash .devcontainer/init-dynamodb.sh",
-  
+
   "remoteUser": "node"
 }

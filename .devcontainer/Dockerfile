@@ -1,6 +1,6 @@
 FROM node:lts-bullseye
 
-# Instalar dependências do sistema
+# Instalar dependências do sistema como root
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -9,9 +9,13 @@ RUN apt-get update && apt-get install -y \
     nano \
     awscli \
     jq \
+    sudo \
     && rm -rf /var/lib/apt/lists/*
 
-# Configurar usuário node
+# Adicionar usuário node ao grupo sudoers (sem senha)
+RUN echo "node ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# Mudar para usuário node
 USER node
 
 # Diretório de trabalho
