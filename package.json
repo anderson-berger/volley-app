@@ -9,8 +9,16 @@
   "scripts": {
     "dev": "echo 'Dev script em breve'",
     "build": "echo 'Build script em breve'",
-    "test": "echo 'Test script em breve'"  },
-  "keywords": ["volleyball", "championship", "monorepo"],
+    "test": "echo 'Test script em breve'"
+  },
+  "keywords": [
+    "volleyball",
+    "championship",
+    "monorepo"
+  ],
   "author": "Anderson Berger Franzagua",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
 }

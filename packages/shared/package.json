@@ -1,0 +1,15 @@
+{
+  "name": "@volley/shared",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tipos e utils compartilhados entre frontend e backend",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["shared", "types"],
+  "author": "Anderson Berger Franzagua",
+  "license": "MIT"
+}
