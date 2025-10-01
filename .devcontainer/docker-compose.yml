@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   app:
@@ -7,7 +7,6 @@ services:
       dockerfile: .devcontainer/Dockerfile
     volumes:
       - ..:/workspace:cached
-      - node_modules:/workspace/node_modules
     working_dir: /workspace
     command: sleep infinity
     networks:
@@ -36,7 +35,6 @@ services:
 
 volumes:
   dynamodb-data:
-  node_modules:
 
 networks:
   volley-network:
