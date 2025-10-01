@@ -1,3 +1,4 @@
+
 {
   "name": "@volley/shared",
   "version": "1.0.0",
@@ -11,5 +12,8 @@
   },
   "keywords": ["shared", "types"],
   "author": "Anderson Berger Franzagua",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^4.1.11"
+  }
 }

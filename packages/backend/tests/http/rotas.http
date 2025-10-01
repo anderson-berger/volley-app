@@ -1,0 +1,7 @@
+curl -X POST http://localhost:3000/dev/users \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "João Silva",
+    "email": "joao@example.com",
+    "role": "player"
+  }'

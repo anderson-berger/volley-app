@@ -7,18 +7,19 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "echo 'Dev script em breve'",
-    "build": "echo 'Build script em breve'",
-    "test": "echo 'Test script em breve'"
+    "dev:shared": "npm run dev -w @volley/shared",
+    "dev:backend": "npm run dev -w @volley/backend",
+    "dev": "npm run dev:shared & npm run dev:backend",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces"
   },
   "keywords": [
     "volleyball",
-    "championship",
     "monorepo"
   ],
   "author": "Anderson Berger Franzagua",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^5.9.3"
   }
 }

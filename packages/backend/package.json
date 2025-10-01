@@ -1,0 +1,34 @@
+{
+  "name": "@volley/backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend serverless para campeonatos de vôlei",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/functions/users/create.ts",
+    "dev:offline": "npm run build -w @volley/shared && npm run build && serverless offline",
+    "build": "tsc",
+    "deploy": "npm run build && serverless deploy",
+    "deploy:dev": "npm run build && serverless deploy --stage dev",
+    "deploy:prod": "npm run build && serverless deploy --stage prod"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.x.x",
+    "@aws-sdk/lib-dynamodb": "^3.x.x",
+    "@volley/shared": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.x.x",
+    "@types/node": "^24.6.1",
+    "serverless": "^4.19.1",
+    "serverless-offline": "^14.4.0",
+    "tsx": "^4.x.x"
+  },
+  "keywords": [
+    "backend",
+    "lambda",
+    "serverless"
+  ],
+  "author": "Anderson Berger Franzagua",
+  "license": "MIT"
+}
